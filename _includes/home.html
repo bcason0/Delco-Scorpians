@@ -1,0 +1,18 @@
+    <!-- ******HOME****** -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">Latest News</h2>
+
+            <div class="lastestnews">
+            {% for news in site.categories.news limit: 10 %}
+		          <hr>
+		            <div class="lastestnews-item">
+			               <h3><a href="{{ news.url }}">{{ news.title }}</a></h3>
+			                  <p><span class="date">{{ news.date | date: "%B %d, %Y" }}</span> <span class="badge {{ news.type }}">{{ news.type }}</span></p>
+
+			                     {{ news.content | truncatewords:20 }}
+		            </div>
+	               {% endfor %}
+            </div>
+        </div><!--//container-->
+    </section><!--//about-->
