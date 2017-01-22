@@ -1,11 +1,3 @@
-/*
- * Template Name: devAid - Responsive Website Template for developers
- * Version: 1.0
- * Author: Xiaoying Riley at 3rd Wave Media
- * Website: http://themes.3rdwavemedia.com/
- * Twitter: @3rdwave_themes
-*/
-/* Default */
 /* ======= Base ======= */
 body {
   font-family: 'Lato', arial, sans-serif;
@@ -90,95 +82,11 @@ a.btn-cta-secondary:hover,
 pre code {
   font-size: 16px;
 }
-/* ======= Header ======= */
-.header {
-  padding: 10px 0;
-  background: black;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-}
-.header.navbar-fixed-top {
-  background: black;
-  z-index: 9999;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-}
-.header.navbar-fixed-top .logo a {
-  color: #ff471a;
-}
-.header.navbar-fixed-top .main-nav .nav .nav-item a {
-  color: #ff471a;
-}
-.header .logo {
-  margin: 0;
-  font-size: 26px;
-  padding-top: 10px;
-}
-.header .logo a {
-  color: white;
-  text-decoration: none;
-}
-.header .logo a:hover {
-  color: lightgrey;
-  text-decoration: none;
-}
-.header .main-nav button {
-  background: #074f66;
-  color: #fff !important;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.header .main-nav button:focus {
-  outline: none;
-}
-.header .main-nav button .icon-bar {
-  background-color: #fff;
-}
-.header .main-nav .navbar-collapse {
-  padding: 0;
-}
-.header .main-nav .nav .nav-item {
-  font-weight: normal;
-  margin-right: 30px;
-  font-family: 'Montserrat', sans-serif;
-}
-.header .main-nav .nav .nav-item a {
-  color: white;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  font-size: 14px;
-  padding: 15px 10px;
-}
-.header .main-nav .nav .nav-item a:hover {
-  color: lightgrey;
-  background: none;
-}
-.header .main-nav .nav .nav-item a:focus {
-  outline: none;
-  background: none;
-}
-.header .main-nav .nav .nav-item a:active {
-  outline: none;
-  background: none;
-}
-.header .main-nav .nav .nav-item.active {
-  color: #17baef;
-}
-.header .main-nav .nav .nav-item.last {
-  margin-right: 0;
-}
 
-/*==== Posts ==== */
+/*============== */
+   /* Posts */
+/*============== */
+
 
 .postbody {
   background-color: whitesmoke;
@@ -194,19 +102,28 @@ pre code {
 
 }
 .container .col-md-8 {
-  margin-top: 100px;
+  margin-top: 25px;
   margin-bottom: 10px;
   /*padding-top: 75px;*/
   position: static;
   background-color: white;
 }
 .container .col-md-9 {
-  margin-top: 100px;
+  margin-top: 25px;
   margin-bottom: 10px;
   /*padding-top: 75px;*/
   position: static;
   background-color: white;
 }
+.container .col-md-12 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  /*padding-top: 75px;*/
+  position: static;
+  background-color: white;
+  padding-bottom: 600px;
+}
+
 
 /* ======= Promo Section ======= */
 
@@ -216,7 +133,7 @@ body {
 .promo {
   background: url("/images/DC_logo4.jpg") no-repeat 50%;
   color: #fff;
-  padding-top: 695px;
+  padding-top: 595px;
 
 }
 .promo .title {
@@ -268,8 +185,8 @@ body {
 }
 /* ======= About Section ======= */
 .about {
-  padding: 80px 0;
-  background: gainsboro;
+  padding: 50px 0;
+  background: whitesmoke;
 }
 .about .title {
   color:  black;
@@ -374,7 +291,7 @@ Sidebar navigation
   width:200px;
   background-color: white;
   border-right: 1px solid #e6e6e6;
-  margin-top: 100px;
+  margin-top: 25px;
   padding-left: -100px;
 }
 
@@ -383,7 +300,7 @@ Sidebar navigation
 }
 
 .main-nav2 a {
-  color: gray;
+  color: #444444;
   text-decoration: none;
   text-transform: capitalize;
   letter-spacing: .1em;
@@ -394,32 +311,80 @@ Sidebar navigation
 }
 
 .main-nav2 a:hover {
-  background: darkblue;
+  color: #ff471a;
+  text-decoration: underline;
+}
+
+/* ========================== */
+          /* Header */
+/* ========================== */
+
+nav.navbar-webmaster { background: black;}
+nav.navbar-webmaster a { color: #fff; }
+nav.navbar-webmaster ul.navbar-nav a { color: #fff; border-style: solid; border-width: 2px 0 0 0; border-color:#1b242c; }
+nav.navbar-webmaster ul.navbar-nav a:hover,
+nav.navbar-webmaster ul.navbar-nav a:visited,
+nav.navbar-webmaster ul.navbar-nav a:focus,
+nav.navbar-webmaster ul.navbar-nav a:active { background:#3b4045; }
+nav.navbar-webmaster ul.navbar-nav a:hover {border-color: #ff471a; }
+nav.navbar-webmaster li.divider { background: #ccc; }
+nav.navbar-webmaster button.navbar-toggle { background:  #1b242c; border-radius: 2px; }
+nav.navbar-webmaster button.navbar-toggle:hover { background: #999; }
+nav.navbar-webmaster button.navbar-toggle > span.icon-bar { background: #fff; }
+nav.navbar-webmaster ul.dropdown-menu { border: 0; background: #fff; border-radius: 4px; margin: 4px 0; box-shadow: 0 0 4px 0 #ccc; }
+nav.navbar-webmaster ul.dropdown-menu > li > a { color: #444; }
+nav.navbar-webmaster ul.dropdown-menu > li > a:hover { background: #f14444; color: #fff; }
+nav.navbar-webmaster span.badge { background: #f14444; font-weight: normal; font-size: 11px; margin: 0 4px; }
+nav.navbar-webmaster span.badge.new { background: rgba(255, 0, 0, 0.8); color: #fff; }
+
+
+/* ========================== */
+       /* Photo Gallery */
+/* ========================== */
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+/* ========================== */
+       /* Tables */
+/* ========================== */
+
+
+table {
+  border: 1px solid lightgrey;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.tabstripe {
+  background: #f2f2f2;
+}
+
+th {
+  border: 1px solid black;
+  height: 35px;
+  padding-left: 10px;
   color: white;
+  background-color: black;
+
 }
 
-.main-nav-ul ul {
-  display: none;
+td {
+  border: 1px solid lightgrey;
+  height: 50px;
+  padding-left: 10px;
 }
-
-.main-nav-ul li.tap ul {
-  display: block;
-}
-
-.main-nav2 .sub-arrow:after {
-  content: '\203A';
-  float: right;
-  margin-right: 20px;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  display: inline-block;
-}
-
-.main-nav2 li.tap .sub-arrow:after {
-  content: '\2039';
-}
-
 
 
 /* Small devices (tablets, 768px and up) */

@@ -1,30 +1,20 @@
-    <!-- ******HEADER****** -->
-    <header id="header" class="header">
-        <div class="container">
-            <h1 class="logo pull-left">
-                <a href="/">
-                    <span class="logo-title">{{ site.sub-title }}</span>
-                </a>
-            </h1><!--//logo-->
-            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button><!--//nav-toggle-->
-                </div><!--//navbar-header-->
-                <div class="navbar-collapse collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active nav-item sr-only"><a href="/">Home</a></li>
-                        <li class="nav-item"><a href="{{ site.baseurl }}/roster">Roster</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#features">Schedule</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#docs">Standings</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#license">Sponsors</a></li>
-                        <li class="nav-item last"><a class="scrollto" href="#contact">Events</a></li>
-                    </ul><!--//nav-->
-                </div><!--//navabr-collapse-->
-            </nav><!--//main-nav-->
+<nav class="navbar navbar-webmaster">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{ site.sub-title }}</a>
         </div>
-    </header><!--//header-->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/roster">Roster</a></li>
+                <li class="active"><a href="/schedule">Schedule</a></li>
+                <li class="active"><a href="/photos">Media</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
