@@ -24,36 +24,4 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/public/plugins/prism/prism.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/public/css/styles.css">
-    <script type="text/javascript">
-    jQuery(document).ready(function($) {
-
-          $('#myCarousel').carousel({
-                  interval: 5000
-          });
-
-          //Handles the carousel thumbnails
-          $('[id^=carousel-selector-]').click(function () {
-          var id_selector = $(this).attr("id");
-          try {
-              var id = /-(\d+)$/.exec(id_selector)[1];
-              console.log(id_selector, id);
-              jQuery('#myCarousel').carousel(parseInt(id));
-          } catch (e) {
-              console.log('Regex failed!', e);
-          }
-      });
-          // When the carousel slides, auto update the text
-          $('#myCarousel').on('slid.bs.carousel', function (e) {
-                   var id = $('.item.active').data('slide-number');
-                  $('#carousel-text').html($('#slide-content-'+id).html());
-          });
-  });
-    </script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
